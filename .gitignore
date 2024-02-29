@@ -10,7 +10,7 @@ src/media
 src/static
 
 # IntelliJ project files
-../.idea
+.idea
 *.iml
 out
 gen
