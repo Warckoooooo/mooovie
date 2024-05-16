@@ -7,7 +7,7 @@ You need a movie ? Go [**here**](https://idonthavednsalready.com)
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/mooovie.git
+   git clone https://github.com/Warckoooooo/mooovie
    ```
 
 2. Navigate to the project directory:
@@ -47,13 +47,13 @@ You need a movie ? Go [**here**](https://idonthavednsalready.com)
 ## Project Structure
 
 - `src/`: The root directory of the Django project.
-  - `config/`: Contains project configuration files.
-  - `modules/`: The differents Django applications containing the business logic.
-    - `mooovie/`: App containing the main business logic
-  - `run/`: Contains the Shell and Python scripts
-  - `templates/`: Contains All the HTML files 
-  - `requirements.txt`: File containing the list of Python dependencies required for the project.
-  - `manage.py`: Django management script for various project management tasks.
+    - `config/`: Contains project configuration files.
+    - `modules/`: The differents Django applications containing the business logic.
+        - `mooovie/`: App containing the main business logic
+    - `run/`: Contains the Shell and Python scripts
+    - `templates/`: Contains All the HTML files
+    - `requirements.txt`: File containing the list of Python dependencies required for the project.
+    - `manage.py`: Django management script for various project management tasks.
 
 ## Contributors
 
