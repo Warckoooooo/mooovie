@@ -7,7 +7,7 @@ You need a movie ? Go [**here**](https://idonthavednsalready.com)
 1. Clone this repository to your local machine:
 
    ```bash
-   git clone https://github.com/Warckoooooo/mooovie
+   git clone https://github.com/warckoooooo/mooovie.git
    ```
 
 2. Navigate to the project directory:
