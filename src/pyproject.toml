@@ -1,0 +1,5 @@
+[tool.pylint]
+load-plugins = ["pylint_django"]
+
+[tool.pylint.messages_control]
+disable = ["missing-module-docstring", "missing-class-docstring"]
