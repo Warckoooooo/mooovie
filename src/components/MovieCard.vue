@@ -13,19 +13,14 @@ export default {
     }
   },
   methods: {
-    // Méthode pour générer l'URL de l'affiche du film
+
     getMoviePoster(path) {
       return `https://image.tmdb.org/t/p/w500/${path}`;
     },
-    // Méthode pour afficher plus de détails sur le film
+
     showMovieDetails() {
-      this.$emit('select', this.movie); // Emet l'événement 'select' avec l'objet movie
+      this.$emit('select', this.movie);
     },
-    // Méthode pour formater la date de sortie
-    formatReleaseDate(date) {
-      const options = { year: 'numeric', month: 'long', day: 'numeric' };
-      return new Date(date).toLocaleDateString('fr-FR', options);
-    }
   }
 };
 </script>

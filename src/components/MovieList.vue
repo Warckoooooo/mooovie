@@ -6,6 +6,7 @@
           :key="movie.id"
           :movie="movie"
           @select="selectMovie"
+          class="flex-shrink-0"
       />
     </div>
     <MovieModal
