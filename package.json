@@ -21,6 +21,7 @@
     "@vue/cli-service": "^5.0.8",
     "@vue/compiler-sfc": "^3.5.10",
     "autoprefixer": "^10.4.20",
+    "daisyui": "^4.12.10",
     "eslint": "^8.32.0",
     "eslint-plugin-vue": "^9.0.0",
     "postcss": "^8.4.47",

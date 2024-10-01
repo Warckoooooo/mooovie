@@ -1,12 +1,12 @@
 <template>
   <div class="container mx-auto p-4">
-    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-2">
       <MovieCard
           v-for="movie in movies"
           :key="movie.id"
           :movie="movie"
           @select="selectMovie"
-          class="flex-shrink-0"
+          class="animate__animated animate__fadeIn"
       />
     </div>
     <MovieModal
@@ -44,25 +44,18 @@ export default {
 
     async fetchRandomMovies(count) {
       const movies = [];
-      for (let i = 0; i < count; i++) {
-        const movieId = Math.floor(Math.random() * 128188) + 1; // Générer un ID aléatoire
+      while (movies.length < count) {
+        const movieId = Math.floor(Math.random() * 128188) + 1; // ID aléatoire
         const movie = await this.fetchMovieById(movieId);
-        if (movie) {
+        if (movie && !movie.adult) { // Vérifie si le film n'est pas pour adultes
           movies.push(movie);
         }
       }
       this.movies = movies;
     },
 
-    calculateNumberOfMovies() {
-      const width = window.innerWidth; // Obtenir la largeur de la fenêtre
-      const cardWidth = 200; // Largeur estimée d'une carte en pixels (ajustez si nécessaire)
-      const count = Math.floor(width / cardWidth); // Calculer le nombre de films à afficher
-      return count > 0 ? count : 1; // Retourner au moins 1 film
-    },
-
     async getMovies() {
-      const numberOfMovies = this.calculateNumberOfMovies();
+      const numberOfMovies = 24;
       await this.fetchRandomMovies(numberOfMovies);
     },
 
@@ -71,7 +64,7 @@ export default {
     },
   },
   mounted() {
-    this.getMovies(); // Appeler la méthode pour récupérer les films lors du montage du composant
+    this.getMovies();
   },
   components: {
     MovieCard,

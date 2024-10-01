@@ -27,6 +27,6 @@ export default {
 
 <style scoped>
 .movie-card {
-  max-width: 200px;
+  max-width: 300px;
 }
 </style>
