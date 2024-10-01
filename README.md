@@ -1,8 +1,8 @@
-# Mooovie Project
+# Mooovie 🍿
 
-You need a movie ? Go [**here**](https://idonthavednsalready.com)
+Need a movie ? Go [**here**](https://idonthavednsalready.com) 
 
-## Installation
+## ⚙️ Installation
 
 1. Clone this repository to your local machine:
 
@@ -10,59 +10,44 @@ You need a movie ? Go [**here**](https://idonthavednsalready.com)
    git clone https://github.com/warckoooooo/mooovie.git
    ```
 
-2. Navigate to the project directory:
+2. Install the project dependencies using npm:
 
    ```bash
-   cd mooovie
+   npm install
    ```
 
-3. Create a virtual environment and activate it:
+3. Start the development server:
 
    ```bash
-   python -m venv venv
-   venv\Scripts\activate   # On Windows
-   source venv/bin/activate   # On macOS/Linux
+   npm run serve
    ```
 
-4. Install the project dependencies:
+4. Access the application in your browser at `http://localhost:8080/`.
 
-   ```bash
-   pip install -r requirements.txt
-   ```
+## 🏗️ Project Structure
 
-5. Run migrations to set up the database:
+- `src/`: The root directory of the Vue.js project.
+    - `components/`: 🧩 Contains reusable Vue components.
+    - `views/`: 📄 Different pages and views of the application.
+    - `assets/`: 🖼️ Static assets like images, fonts, etc.
+    - `router/`: 🛣️ Vue Router configuration for page navigation.
+    - `store/`: 📦 Vuex store for managing global state.
+    - `App.vue`: 🏠 The main application component.
+    - `main.js`: 🚀 The entry point of the Vue.js application.
 
-   ```bash
-   python manage.py migrate
-   ```
+## 🎞️ How it Works
 
-6. Start the development server:
+- **Movie Display**: 🎥 Displays movie posters from the IMDB API. Every refresh shows new movies. 🍿
+- **Modal Interaction**: 📋 Clicking on a movie poster opens a modal with detailed information such as the title, release date, rating, and synopsis.
 
-   ```bash
-   python manage.py runserver
-   ```
-
-7. Access the application in your browser at `http://127.0.0.1:8000/`.
-
-## Project Structure
-
-- `src/`: The root directory of the Django project.
-    - `config/`: Contains project configuration files.
-    - `modules/`: The differents Django applications containing the business logic.
-        - `mooovie/`: App containing the main business logic
-    - `run/`: Contains the Shell and Python scripts
-    - `templates/`: Contains All the HTML files
-    - `requirements.txt`: File containing the list of Python dependencies required for the project.
-    - `manage.py`: Django management script for various project management tasks.
-
-## Contributors
+## 🧑‍🤝‍🧑 Contributors
 
 - [Warcko](https://github.com/Warckoooooo)
 
-## License
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-For more information about Django, please refer to the [official documentation](https://docs.djangoproject.com/).
+For more information about Vue.js, please refer to the [official documentation](https://vuejs.org/).
